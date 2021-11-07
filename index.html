@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!--    meta tags 1 - отображение контента -->
+    <!--    Кодировка текста-->
+    <meta charset="utf-8">
+    <!--    Фиксированная ширина экрана - если меньше заданной, то уменьшается шрифт-->
+    <meta content="width=1170" name="viewport">
+    <!--    Адаптивная верстка - Контент подстраивается под ширину экрана-->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!--    Отключаем автоматическое формирование ссылки для номеров телефонов на iOS-->
+    <meta content="telephone=no" name="format-detection">
+    <!-- meta tags 2 - для SEO -->
+    <!--    Краткое описание до 160 символов-->
+    <meta content="My template for HTML and CSS." name="description">
+    <!--    Ключевые слова или словосочетания до 20 шт-->
+    <meta content="keyword1, keyword2 keyword3, keyword4" name="keywords">
+    <!-- Доступ поисковых роботов: запрет индексации картинок и ссылок-->
+    <!--        <meta content="noimageindex,nofollow" name="robots">-->
+    <!-- Доступ поисковых роботов: запрет индексации полностью-->
+    <!--        <meta content="none" name="robots">-->
+    <!--    meta tags 3 - технические -->
+    <meta content="Sneganega" name="Author">
+    <meta content="Sneganega" name="Copyright">
+    <meta content="Sneganega" name="Address">
+    <!--    Перенаправление по URL='' через 0 секунд-->
+    <!--    <meta content="0;url=" http-equiv="refresh">-->
+    <!--    meta tags 4 - для соцсетей через протокол OpenGraph для Facebook и VK-->
+    <meta content="Post Title" property="og:title"/>
+    <meta content="Post Description" property="og:description"/>
+    <meta content="https://ahrefs.com/blog/wp-content/uploads/2020/01/og-tags-1.png" property="og:image"/>
+    <title>Sneganega Project | Template for HTML and CSS</title>
+    <link href="scss/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header__row">
+            <a class="header__logo"></a>
+            <div class="header__menu">
+            </div>
+            <nav class="header__body">
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="position-sticky">
+    <div class="sticky1">
+        block1-sticky
+    </div>
+    <div class="sticky2">
+        block2-sticky
+    </div>
+    <div class="sticky3">
+        block3-sticky
+    </div>
+</div>
+<br/>
+
+<div class="position-fixed">
+    <div class="fixed1">
+        block1-fixed
+    </div>
+    <div class="fixed2">
+        block2-fixed
+    </div>
+    <div class="fixed3">
+        block3-fixed
+    </div>
+</div>
+<br/>
+
+<div class="position-relative">
+    <div class="relative1">
+        block1-relative
+    </div>
+    <div class="relative2">
+        block2-relative
+    </div>
+    <div class="relative3">
+        block3-relative
+    </div>
+</div>
+<br/>
+
+<div class="position-absolut">
+    <div class="absolut1">
+        block1-absolut
+    </div>
+    <div class="absolut2">
+        block2-absolut
+    </div>
+    <div class="absolut3">
+        block3-absolut
+    </div>
+</div>
+<br/>
+
+<div>
+    <h1>Typography</h1>
+
+    <h1>Headline 1</h1>
+    <h2>Headline 2</h2>
+    <h3>Headline 3</h3>
+    <h4>Headline 4</h4>
+    <h5>Headline 5</h5>
+    <h6>Headline 6</h6>
+
+    <p>Paragraph with inline tag <span>span</span></p>
+
+    <p>Paragraph with inline tag <a class="example-link" href="index.html" target="_blank">link</a></p>
+
+    <p>Paragraph with inline tag img <img alt="" height="30" src="img/bootstrap-social-logo.png" width="30"/></p>
+
+    <ul class="list">
+        <li>
+            Unordered list item 1
+        </li>
+        <li>
+            Unordered list item 2
+        </li>
+        <li>
+            Unordered list item 3
+        </li>
+        <li>
+            Unordered list item 4
+        </li>
+        <li>
+            Unordered list item 5
+        </li>
+    </ul>
+    <br/>
+    <ol>
+        <li>
+            Ordered list item 1
+        </li>
+        <li>
+            Ordered list item 2
+        </li>
+    </ol>
+
+    <p class="text">Absolute positioning is the key to making this happen. If you think of your browser as one big
+        bounding box, absolute positioning allows you to control exactly where in that box an element will stay. Use
+        top, right, bottom and left, accompanied by a pixel value to control where an element stays.</p>
+</div>
+<br/>
+
+<div class="gradient">
+    <h1>Form</h1>
+
+    <form action="#" enctype="multipart/form-data" method="get">
+        <div>
+            <label for="emailId">Input for email text</label>
+            <input class="textinput" id="emailId" name="email" placeholder="Enter Email" type="email" value=""/>
+        </div>
+        <br/>
+        <div>
+            <textarea name="description" placeholder="Enter description"></textarea>
+        </div>
+        <br/>
+        <div>
+            <input name="foto" type="file"/>
+        </div>
+        <br/>
+        <div>
+            <p>
+                <input name="item1" type="checkbox" value="value1"/>
+                Checkbox value1
+            </p>
+            <p>
+                <input checked name="item2" type="checkbox" value="value2"/>
+                Checkbox value2
+            </p>
+        </div>
+        <br/>
+        <div>
+            <p>
+                <input name="radio1" type="radio" value="value1"/>
+                Radio value1
+            </p>
+            <p>
+                <input checked name="radio1" type="radio" value="value2"/>
+                Radio value2
+            </p>
+            <p>
+                <input name="radio1" type="radio" value="value3"/>
+                Radio value3
+            </p>
+        </div>
+        <br/>
+        <div>
+            <select name="color">
+                <option value="value1">Red</option>
+                <option selected value="value2">Blue</option>
+                <option value="value3">Green</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            <button class="buttonsubmit" type="submit">Submit button</button>
+        </div>
+        <br/>
+        <div>
+            <button type="reset">Reset button</button>
+        </div>
+    </form>
+    <br/>
+</div>
+<br/>
+
+<div class="imagebackground"></div>
+<br/>
+
+<div class="textstyle1">
+    If you want control over where an element lives on our website at all times, absolute positioning is the key to
+    making this happen. If you think of your browser as one big bounding box, absolute positioning allows you to
+    control exactly where in that box an element will stay. Use top, right, bottom and left, accompanied by a pixel
+    value to control where an element stays.
+</div>
+
+<div class="textstyle2">
+    This should be used sparingly, because if you do this for everything, you’re going to find yourself in trouble
+    in the long run. However, if you want to override another CSS style for a specific element, use !important after
+    the style in your css. For example, if I wanted the H2 headers in a specific section of my site to be red
+    instead of blue, I would use the following CSS:
+</div>
+
+<div class="wrapper">
+    <div class="block">
+        <h1>Flex-контейнер</h1>
+        <div class="block__row">
+            <div class="block__column">
+                <div class="block__item">
+                    1
+                </div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">
+                    2
+                    <br/>
+                    big
+                    <br/>
+                    block
+                </div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">
+                    3
+                    <br/>
+                    block
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
